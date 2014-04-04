@@ -1,0 +1,15 @@
+DEFAULT menu.c32
+
+MENU TITLE SUNYIT NCS Club OS Installer
+
+LABEL tinycore
+	MENU LABEL Install OS
+	kernel tinycore/vmlinuz
+	append initrd=tinycore/core.gz  tftplist=192.168.1.10:/tinycore/ext/ext.lst --
+
+LABEL local
+	MENU LABEL Boot to Local Drive
+	LOCALBOOT 0
+
+PROMPT 0
+TIMEOUT 0
