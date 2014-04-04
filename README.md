@@ -1,6 +1,6 @@
 # NCS Club Cloner
 
-This is a system built to all users to select an operating system image to install to a phyiscal device.
+This is a system built to all users to select an operating system image to install to a physical device.
 
 An 'image' is the tarred and gzipped (tar.gz) root filesystem
 
@@ -34,11 +34,11 @@ This is the format of this file:
 
 ARCH:OS_TYPE:IMAGE_ID:IMAGE_NAME:PARTITIONING_TYPE
 
-ARCH - The architecture of the image, this is either "x32" or "x64"
-OS_TYPE - The OS type, either "Linux" or "Windows"
-IMAGE_ID - The id of the name, this is to be the name of the file in the 'images' folder
-IMAGE_NAME - The name of the image, this is what is displayed to the user
-PARTITIONING_TYPE - The partitioning format to use. Indicates the folder in the scripts folder that is selected and used
+* ARCH - The architecture of the image, this is either "x32" or "x64"
+* OS_TYPE - The OS type, either "Linux" or "Windows"
+* IMAGE_ID - The id of the name, this is to be the name of the file in the 'images' folder
+* IMAGE_NAME - The name of the image, this is what is displayed to the user
+* PARTITIONING_TYPE - The partitioning format to use. Indicates the folder in the scripts folder that is selected and used
 
 images.lst is for safe images (for general usage)
 images-vuln.lst is for vulnerable images (for pentesting)
